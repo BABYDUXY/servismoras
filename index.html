@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <script
+      src="https://kit.fontawesome.com/a4ab931afe.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAceHD0vXwD374v3L4gaIiTrHiiqjGQGPs&callback=console.debug&libraries=maps,marker&v=beta"
+    ></script>
+  </head>
+  <body>
+    <main class="container">
+      <div class="grid header_grid">
+        <hgroup>
+          <h1 class="title">SERVIS MORAS</h1>
+          <h2 id="partner">BRODOMEHANIČARSKI SERVIS</h2>
+        </hgroup>
+        <div class="flags">
+          <img class="flag" src="img/croatia.png" alt="croatian flag" />
+          <img class="flag" src="img/uk.png" alt="United kingdom flag" />
+          <img class="flag" src="img/german.png" alt="German flag" />
+        </div>
+      </div>
+
+      <div class="container courousel">
+        <div class="konte">
+          <img src="img/slikica.JPG" alt="" />
+          <img src="img/slikica2.JPG" alt="" />
+          <img src="img/slikica3.JPG" alt="" />
+
+          <div class="dots">
+            <div class="dot">
+              <i class="far fa-dot-circle"></i>
+            </div>
+            <div class="dot">
+              <i class="far fa-circle"></i>
+            </div>
+            <div class="dot">
+              <i class="far fa-circle"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container official">
+        <h3>Official service for</h3>
+        <div class="slike">
+          <div class="img">
+            <img src="img/volvo.jpg" alt="" />
+          </div>
+          <div class="img">
+            <img src="img/mercruiser.png" alt="" />
+          </div>
+          <div class="img">
+            <img src="img/mercury.png" alt="" />
+          </div>
+          <div class="img">
+            <img src="img/tohatsu.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="container main_body">
+        <details open>
+          <summary>O nama</summary>
+          <p>
+            Brodomehaničarski servis Moras reputabilni je servis koji posluje
+            preko 20 godina. Službeni smo servis za sve volvo penta, mercruiser,
+            mercury i tohatshu brodske motore.
+          </p>
+          <p>
+            Nalazimo se u glavnoj luci na otoku Rabu te radimo aktivne kvarove u
+            samoj luci ili rad na terenu koji je moguć u svakoj suhoj marini na
+            otoku.
+          </p>
+        </details>
+        <details>
+          <summary>Kontakt</summary>
+          <ul>
+            <li>E-mail: service.moras@gmail.com</li>
+            <li>Mobile: +385 98 343 284</li>
+            <li>service number: 000 999 234</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Lokacija</summary>
+          <gmp-map
+            center="44.75673294067383,14.7640380859375"
+            zoom="16"
+            map-id="DEMO_MAP_ID"
+          >
+            <gmp-advanced-marker
+              position="44.7566673,14.7641253"
+              title="My location"
+            ></gmp-advanced-marker>
+          </gmp-map>
+
+          <ul class="adress">
+            <li><h5>Adresa</h5></li>
+            <li>Banjol 108</li>
+            <li>51280 Rab</li>
+          </ul>
+        </details>
+      </div>
+    </main>
+    <footer>
+      <p>&copy;2024. Servis Moras | Sva prava pridržana.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
