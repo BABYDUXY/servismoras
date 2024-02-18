@@ -18,6 +18,14 @@ const defClass = (startPos, index) => {
 
 defClass(1, 0);
 
+for (let i = 0; i < 3; i++) {
+  dots[i].addEventListener("click", () => {
+    defClass(i + 1, i);
+    currentIndex = i;
+    defClass(0, currentIndex);
+  });
+}
+
 const startAutoSlide = () => {
   setInterval(() => {
     currentIndex >= imgs.length - 1 ? (currentIndex = 0) : currentIndex++;
