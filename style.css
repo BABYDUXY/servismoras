@@ -89,6 +89,11 @@ img.flag{
     height: auto;
     z-index: 10;
 }
+
+
+.dot i:hover{
+    cursor:pointer;
+}
 .konte .dots .dot {
     width: 2rem;
     height: 2rem;
